@@ -110,7 +110,7 @@ vi.mock('next/image', () => ({
 vi.mock('next/link', () => ({
   default: (props: {
     href: string
-    children: React.ReactNode
+    children: PropsWithChildren
     className?: string
     prefetch?: boolean
     replace?: boolean
@@ -344,7 +344,7 @@ vi.mock('next/link', () => ({
     children,
   }: {
     href: string
-    children: React.ReactNode
+    children: PropsWithChildren
   }) => (
     <a href={href} data-testid="next-link">
       {children}

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 interface NavLinkProps {
   href: string
-  icon: React.ReactNode
+  icon: PropsWithChildren
   label: string
   isActive?: boolean
 }

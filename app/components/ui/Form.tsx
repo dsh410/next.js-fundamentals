@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react'
 
 // Form
 interface FormProps extends React.FormHTMLAttributes<HTMLFormElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function Form({ className, children, ...props }: FormProps) {
@@ -16,7 +16,7 @@ export function Form({ className, children, ...props }: FormProps) {
 
 // Form Group
 interface FormGroupProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function FormGroup({ className, children, ...props }: FormGroupProps) {
@@ -29,7 +29,7 @@ export function FormGroup({ className, children, ...props }: FormGroupProps) {
 
 // Form Label
 interface FormLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function FormLabel({ className, children, ...props }: FormLabelProps) {
@@ -116,7 +116,7 @@ FormSelect.displayName = 'FormSelect'
 
 // Form Error
 interface FormErrorProps extends React.HTMLAttributes<HTMLParagraphElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function FormError({ className, children, ...props }: FormErrorProps) {
@@ -130,7 +130,7 @@ export function FormError({ className, children, ...props }: FormErrorProps) {
 // Form Description
 interface FormDescriptionProps
   extends React.HTMLAttributes<HTMLParagraphElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function FormDescription({

@@ -150,7 +150,7 @@ import DashboardSkeleton from '../components/DashboardSkeleton'
 export default async function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: PropsWithChildren
 }) {
   return (
     <div className="min-h-screen">

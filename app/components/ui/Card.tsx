@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import React from 'react'
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
   hoverable?: boolean
 }
 
@@ -27,7 +27,7 @@ export function Card({
 }
 
 interface CardHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function CardHeader({ className, children, ...props }: CardHeaderProps) {
@@ -39,7 +39,7 @@ export function CardHeader({ className, children, ...props }: CardHeaderProps) {
 }
 
 interface CardTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function CardTitle({ className, children, ...props }: CardTitleProps) {
@@ -52,7 +52,7 @@ export function CardTitle({ className, children, ...props }: CardTitleProps) {
 
 interface CardDescriptionProps
   extends React.HTMLAttributes<HTMLParagraphElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function CardDescription({
@@ -71,7 +71,7 @@ export function CardDescription({
 }
 
 interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function CardContent({
@@ -87,7 +87,7 @@ export function CardContent({
 }
 
 interface CardFooterProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode
+  children: PropsWithChildren
 }
 
 export function CardFooter({ className, children, ...props }: CardFooterProps) {
